@@ -100,4 +100,9 @@ $(document).ready(function () {
     },
   });
  
+  $(".drop_down_btn").click(function () {
+    $(this).closest('.category_main_wrapper').find('.category_cards_main').slideToggle();
+    $(this).toggleClass('rotate_btn');
+});
+
 });
