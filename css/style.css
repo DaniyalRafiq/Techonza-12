@@ -1875,6 +1875,7 @@ textarea:focus {
     display: flex;
     gap: 10px;
     width: 100%;
+    align-items: center;
 }
 
 input.footer_input {
@@ -1889,17 +1890,18 @@ input.footer_input {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6px 12px;
+    padding: 0 12px;
     border-radius: 5px;
     color: white;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    height: 36px;
 }
 
 .footer_subscribe h4 {
     color: white;
-    font-size: 23px;
-    flex: 0 0 230px;
+    font-size: 25px;
+    flex: 0 0 260px;
     font-family: var(--font-600);
 }
 
@@ -2330,6 +2332,328 @@ a.f_tag:hover {
 } */
 
 /* ==========category_End==========*/
+
+
+/* ==========single_store_Start==========*/
+.store-verify__tag {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+.store-verify__tag svg {
+    width: 20px;
+    flex: 0 20px;
+    height: 20px;
+    fill: green;
+}
+
+.store-verify__tag p {
+    color: #999999;
+    font-size: 14px;
+}
+
+.single_store_side_img {
+    height: 102px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 10px #0001;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.single_store_side_img img {
+    object-fit: contain;
+}
+
+.sidebar_item_main.single_store_sidebar_main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.single_store_side_content {
+    flex-direction: column;
+    display: flex;
+    /* gap: 5px; */
+    align-items: center;
+    text-align: center;
+}
+
+.single_store_side_content h4 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.rating_star i {
+    font-size: clamp(18px, 2.5vw, 20px);
+    color: rgba(192, 192, 192, 0.719);
+}
+
+.single_store_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.single_store_img {
+    height: 119px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    padding: 15px;
+    border-bottom: 1px dashed #0003;
+    position: relative;
+}
+
+.single_store_img figure {
+    align-self: center;
+    height: 100%;
+    width: 154px;
+    padding: 5px;
+    /* box-shadow: 0 0 15px #0001; */
+    border: 1px solid #0001;
+    border-radius: 5px;
+}
+
+.single_store_card {
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 5%) 1px 2px 6px 0px;
+}
+
+.single_store_img figure img {
+    object-fit: contain;
+}
+
+.coupon_tags {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+}
+
+.main_coupon_tags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.single_store_card_content h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.single_store_card_content {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.circle {
+    background: white;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: -10px;
+    bottom: -10px;
+}
+
+.circle.circle_1 {
+    box-shadow: inset rgba(0, 0, 0, 0.1) 2px 0px 3px 0px;
+}
+
+.circle.circle_2 {
+    left: -9px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) -2px 0px 3px 0px;
+}
+
+.coupon_tags span {
+    font-size: 14px;
+}
+
+.coupon_tags span.exp {
+    color: red;
+}
+
+.coupon_tags span.add {
+    color: var(--secondary-500);
+}
+
+.coupon_tags span.people {
+    color: #a5a5a5;
+}
+
+.single_store_card_content p {
+    font-size: 15px;
+}
+
+.coupon_btn {
+    position: relative;
+    display: block;
+    width: 170px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.get_code {
+    position: absolute;
+    background: var(--primary-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px 0 5px 0;
+    width: 80%;
+    height: 100%;
+    transition: 0.3s ease;
+    right: 0;
+    z-index: 2;
+    font-size: 16px;
+    right: 20%;
+    font-weight: 600;
+}
+
+.coupon_code {
+    background: var(--secondary);
+    display: flex;
+    background: linear-gradient(315deg, rgba(0, 0, 0, .06) 10%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .06) 40%, rgba(0, 0, 0, .06) 60%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, .06) 90%) repeat scroll 0 0/6px 6px rgba(0, 0, 0, 0);
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid var(--primary-400);
+    height: 100%;
+    padding-right: 10px;
+}
+
+.coupon_btn:hover .get_code {
+    right: 23%;
+}
+
+.verified {
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: -35px;
+    top: 7px;
+    font-size: 13px;
+    transform: rotate(-45deg);
+    min-width: 110px;
+}
+
+.verified::before {
+    left: 0;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.verified:before,
+.verified:after {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 13px;
+    background: #38913c;
+    top: 99%;
+}
+
+.verified::after {
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+
+.verified p {
+    clip-path: polygon(22% 0, 78% 0, 100% 100%, 0% 100%);
+    background: #38913c;
+    padding: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-family: var(--font-600);
+}
+
+.coupon_btn.deal .get_code {
+    background: var(--secondary-400);
+    right: 0;
+    width: 100%;
+}
+
+.coupon_btn.deal .get_code:hover {
+    background: var(--secondary-500);
+    right: 0;
+    width: 100%;
+}
+
+.single_store_exp {
+    margin-top: 30px;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    filter: grayscale(1);
+}
+
+.single_store_exp_content h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.single_store_exp_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.single_store_exp_content p {
+    font-size: 15px;
+}
+
+.filter_btn_all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.filter_btn {
+    flex: 1;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: var(--black);
+    font-family: var(--font-600);
+    background: #ededed;
+    box-shadow: 0 0 5px #0001;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.filter_btn:where(:hover, .active) {
+    background-color: var(--primary-500);
+    color: var(--white);
+}
+
+.single_store_main_cards.flex_1 {
+    width: 100%;
+}
+
+/* ==========single_store_End==========*/
 
 
 /*==========CustomCss==========*/
