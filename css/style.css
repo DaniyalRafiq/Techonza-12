@@ -790,7 +790,7 @@ h4 {
     rotate: 180deg;
     border-radius: 10px;
     overflow: hidden;
-    filter: drop-shadow(-5px 4px 5px #2a9d8f);
+    filter: drop-shadow(0px 0px 1px #2a9d8f);
     position: absolute;
     width: 100%;
     height: 75px;
@@ -2399,7 +2399,6 @@ a.f_tag:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
     gap: 25px;
-    margin-top: 10px;
 }
 
 .single_store_img {
@@ -2410,7 +2409,7 @@ a.f_tag:hover {
     justify-content: center;
     /* overflow: hidden; */
     padding: 15px;
-    border-bottom: 1px dashed #0003;
+    border-bottom: 2px dashed #f9fafd;
     position: relative;
 }
 
@@ -2427,6 +2426,9 @@ a.f_tag:hover {
 .single_store_card {
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 5%) 1px 2px 6px 0px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .single_store_img figure img {
@@ -2450,6 +2452,7 @@ a.f_tag:hover {
 .single_store_card_content h4 {
     font-size: 20px;
     font-weight: 600;
+    color: #8b8b8b;
 }
 
 .single_store_card_content {
@@ -2460,7 +2463,7 @@ a.f_tag:hover {
 }
 
 .circle {
-    background: white;
+    background: #f9fafd;
     position: absolute;
     height: 20px;
     width: 20px;
@@ -2651,6 +2654,138 @@ a.f_tag:hover {
 
 .single_store_main_cards.flex_1 {
     width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    align-items: center;
+    justify-content: space-around;
+    background: #fbfbfb;
+    border-top: 1px dashed #0002;
+}
+
+.start_date {
+    color: green;
+}
+
+.start_date,
+.exp_date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exp_date {
+    color: red;
+}
+
+.copy_code {
+    background: linear-gradient(315deg, rgba(0, 0, 0, .06) 10%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .06) 40%, rgba(0, 0, 0, .06) 60%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, .06) 90%) repeat scroll 0 0/6px 6px rgba(0, 0, 0, 0);
+    border: 1px solid;
+    margin: auto;
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.click_code {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    gap: 5px;
+}
+
+/* .modal-header {
+    align-items: center;
+    justify-content: center;
+} */
+
+.coupon_codes {
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+    background: #fbfbfb;
+}
+
+.click_code a {
+    color: var(--secondary-400);
+}
+
+.modal_header_content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal_img {
+    height: 80px;
+    flex: 0 0 90px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    background: white;
+}
+
+.modal-header {
+    background: #fbfbfb;
+    border-bottom: 1px dashed #0002;
+}
+
+.modal_img img {
+    object-fit: contain;
+}
+
+.modal_img_content h4 {
+    font-size: 20px;
+    font-family: var(--font-600);
+}
+
+.modal-body {
+    flex-direction: column;
+    display: flex;
+    /* gap: 20px; */
+    padding: 0;
+}
+
+.about_coupon {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+}
+
+.about_coupon p {
+    font-size: clamp(13px, 2.5vw, 15px);
+}
+
+.modal_btn {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-400);
+    border-radius: 0;
+    color: var(--white);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 0 0 0 5px;
+}
+.modal-content {
+    overflow: hidden;
 }
 
 /* ==========single_store_End==========*/
