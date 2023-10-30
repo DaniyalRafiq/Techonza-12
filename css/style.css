@@ -1546,8 +1546,12 @@ input[type="submit"] {
 }
 
 .submit_btn {
-    font-size: 19px;
-    padding: 4px 40px;
+    padding: 4px 30px;
+    background: var(--secondary-400);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .icon_main .icon {
@@ -2740,12 +2744,20 @@ a.f_tag:hover {
 .header_post .populor_card:after {
     content: none;
 }
-.header_post   .populor_card  .populor_card_content h4{
+
+.header_post .populor_card .populor_card_content h4 {
     font-size: 18px;
 }
+
 .store_btn:hover {
     color: var(--white);
     background: var(--secondary-500);
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
 }
 
 /* ==========Header_End==========*/
