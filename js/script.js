@@ -59,18 +59,18 @@ $(document).ready(function () {
     },
   });
 
-  $(".search_btn").click(function () {
-    $(".header_form").toggleClass("search_show");
-    $(this).toggleClass("active");
-    $(".search_btn i").toggleClass("ti-x");
-    $("body").toggleClass("bar");
-  });
+  // $(".search_btn").click(function () {
+  //   $(".header_form").toggleClass("search_show");
+  //   $(this).toggleClass("active");
+  //   $(".search_btn i").toggleClass("ti-x");
+  //   $("body").toggleClass("bar");
+  // });
 
-  $(".menu_btn").click(function () {
+  $(".menu").click(function () {
     $(".nav_main").toggleClass("active");
     $("body").toggleClass("active");
     $(this).toggleClass("active");
-    $(".menu_btn i").toggleClass("ti-x");
+    $(".menu i").toggleClass("ti-x");
   });
 
   var swiper_thumb = new Swiper(".hero_slide_thumb", {
@@ -94,15 +94,50 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev.hero_slide_btn",
     },
     centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
+    
   });
  
   $(".drop_down_btn").click(function () {
     $(this).closest('.category_main_wrapper').find('.category_cards_main').slideToggle();
     $(this).toggleClass('rotate_btn');
+});
+
+var input = $(".header_form input");
+var headerResult = $(".header_result");
+var searchBtn = $(".search_btn i");
+
+input.on('input', function() {
+    var inputValue = $(this).val().trim();
+    toggleHeaderResult(inputValue);
+    toggleSearchButton(inputValue);
+});
+
+input.blur(function() {
+    var inputValue = input.val().trim();
+    toggleHeaderResult(inputValue);
+});
+
+function toggleHeaderResult(inputValue) {
+    if (inputValue !== "") {
+        headerResult.slideDown();
+    } else {
+        headerResult.slideUp();
+    }
+}
+
+function toggleSearchButton(inputValue) {
+    if (inputValue !== "") {
+        searchBtn.addClass("ti-x");
+    } else {
+        searchBtn.removeClass("ti-x");
+    }
+}
+
+// Click event for the search button
+$(".search_btn").on('click', function() {
+    input.val("");
+    toggleHeaderResult("");
+    toggleSearchButton("");
 });
 
 });
