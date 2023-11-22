@@ -967,7 +967,7 @@ h4 {
 }
 
 .populor_card_content h4 {
-    font-size: clamp(18px, 2.5vw, 20px);
+    font-size: clamp(16px, 2.5vw, 17px);
     font-weight: 600;
     word-break: unset;
 }
@@ -1127,7 +1127,11 @@ h4 {
     color: var(--secondary-500);
     margin: 0 7px;
 }
-
+.single_blog_content img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .aurthor_content.single_blog_aurthor_content>.name {
     color: black;
 }
@@ -1144,6 +1148,9 @@ h4 {
     flex-direction: column;
     display: flex;
     gap: 25px;
+}.single_blog_aurthor_main h4 {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .single_blog_main_content figure {
@@ -1155,8 +1162,8 @@ h4 {
 
 .single_blog_aurthor_main {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .single_blog_tags {
